@@ -3,7 +3,7 @@
   display: inline-block;
   padding: 10px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px 0px 10px 0px;
   cursor: pointer;
 }
 
@@ -417,7 +417,7 @@ h6 {
 }
 
 header {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: rgb(211, 31, 184);
 }
 header .branding {
@@ -461,22 +461,32 @@ header nav ul li a:hover, header nav ul li a.active {
     padding: 5px 10px;
   }
 }
+.home-section {
+  padding: 100px 0 100px;
+  background-color: #fff;
+}
+
 .about-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #fff;
 }
 
 .service-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
+  background-color: transparent;
 }
 
 .comment-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #fff;
+}
+.comment-section .comment-img img {
+  border-radius: 50%;
 }
 
 .course-section {
-  padding: 50px 0;
+  padding: 50px 0 50px;
+  background-color: transparent;
 }
 .course-section table {
   border: 1px solid #000;
@@ -506,14 +516,18 @@ header nav ul li a:hover, header nav ul li a.active {
   background-color: rgb(78.3333333333%, 78.3333333333%, 78.3333333333%);
 }
 
+.contact-section {
+  padding: 30px 0 30px;
+  background-color: #fff;
+}
+
 footer {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: rgb(211, 31, 184);
 }
 footer ul {
   list-style: none;
   padding-left: 0;
-  margin-bottom: 25px;
 }
 footer ul a {
   display: block;
