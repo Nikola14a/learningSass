@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.btn-dark, .btn-info, .btn-warning, .btn-success, .btn-danger, .btn-default {
+  display: inline-block;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-default {
+  background-color: #444;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #f00008;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #18b304;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #f77a05;
+  color: #fff;
+}
+
+.btn-info {
+  background-color: #09e0b1;
+  color: #000;
+}
+
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+}
+
 /*
  -- FONT PROPERTY --
 font-family: "Lato", sans-serif;
@@ -408,6 +446,10 @@ header nav ul li a:hover, header nav ul li a.active {
 .about-section {
   padding: 30px 0;
   background-color: #fff;
+}
+
+.service-section {
+  padding: 30px 0;
 }
 
 .comment-section {
