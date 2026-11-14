@@ -3,7 +3,7 @@
   display: inline-block;
   padding: 10px 25px;
   border: none;
-  border-radius: 0px;
+  border-radius: 10px 0px 10px 0px;
   cursor: pointer;
 }
 
@@ -33,7 +33,7 @@
 
 .btn-warning {
   background-color: #f77a05;
-  color: #fff;
+  color: #000;
 }
 .btn-warning:hover {
   background-color: rgb(77.2595704949%, 38.1605975724%, 1.5639589169%);
@@ -481,7 +481,7 @@ header nav ul li a:hover, header nav ul li a.active {
   background-color: #fff;
 }
 .comment-section .comment-img img {
-  border-radius: 0px;
+  border-radius: 50%;
 }
 
 .course-section {
@@ -503,7 +503,7 @@ header nav ul li a:hover, header nav ul li a.active {
   padding: 10px 5px;
 }
 .course-section table thead {
-  background-color: rgb(211, 31, 184);
+  background: rgb(211, 31, 184);
 }
 .course-section table thead th {
   color: #fff;
