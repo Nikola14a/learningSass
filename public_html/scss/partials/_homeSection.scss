@@ -2,4 +2,8 @@ $home-bg: $white;
 
 .home-section {
   @include styleSection(100px, 100px, $home-bg);
+  background-image: url(assets/home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
