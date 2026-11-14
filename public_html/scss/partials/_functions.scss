@@ -2,11 +2,19 @@
 $radius: 5px;
 
 @mixin radius($radius) {
-  border-radius: $radius;
+  @if ($enable-radius) {
+    border-radius: $radius;
+  } @else {
+    border-radius: 0px;
+  }
 }
 
 @mixin customRadius($rtl, $rtr, $rbr, $rbl) {
-  border-radius: $rtl $rtr $rbr $rbl;
+  @if ($enable-radius) {
+    border-radius: $rtl $rtr $rbr $rbl;
+  } @else {
+    border-radius: 0px;
+  }
 }
 
 @mixin styleSection($pt, $pb, $bg) {
