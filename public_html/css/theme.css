@@ -486,6 +486,7 @@ h6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   color: rgb(211, 31, 184);
+  margin-top: 0;
 }
 
 header {
@@ -556,10 +557,28 @@ header nav ul li a:hover, header nav ul li a.active {
   padding: 30px 0 30px;
   background-color: #fff;
 }
-.comment-section .comment-img img {
-  border-radius: 50%;
+.comment-section .comment-list {
+  list-style: none;
+  padding: 0;
+}
+.comment-section .comment-list .comment-item {
+  display: flex;
+}
+.comment-section .comment-list .comment-item .comment-img {
+  flex: 0 0 50px;
+}
+.comment-section .comment-list .comment-item .comment-img img {
+  border-radius: 20%;
+}
+.comment-section .comment-list .comment-item .comment-body {
+  padding-left: 10px;
 }
 
+@media (min-widht: 768px) {
+  .comment-section .comment-list .comment-img {
+    flex: 0 0 90px !important;
+  }
+}
 .course-section {
   padding: 50px 0 50px;
   background-color: transparent;
@@ -593,8 +612,35 @@ header nav ul li a:hover, header nav ul li a.active {
 }
 
 .contact-section {
-  padding: 30px 0 30px;
+  padding: 150px 0 150px;
   background-color: #fff;
+  background-image: url(assets/contact.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+.contact-section h2 {
+  text-align: center;
+}
+.contact-section .contact-form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contact-section .contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+.contact-section .contact-form .form-group .label {
+  display: block;
+}
+.contact-section .contact-form .form-group .form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  padding: 0px 10px;
+  line-height: 4rem;
+  border-radius: 5px;
 }
 
 footer {

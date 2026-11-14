@@ -3,9 +3,31 @@ $comment-bg: $white;
 .comment-section {
   @include styleSection(30px, 30px, $comment-bg);
 
-  .comment-img {
-    img {
-      @include radius(50%);
+  .comment-list {
+    list-style: none;
+    padding: 0;
+
+    .comment-item {
+      display: flex;
+      .comment-img {
+        flex: 0 0 50px;
+        img {
+          @include radius(20%);
+        }
+      } // coment - img end
+      .comment-body {
+        padding-left: 10px;
+      }
+    } // coment - item end
+  } // comment-list end
+} // comment - section end
+
+@media (min-widht: 768px) {
+  .comment-section {
+    .comment-list {
+      .comment-img {
+        flex: 0 0 90px !important;
+      }
     }
   }
 }
