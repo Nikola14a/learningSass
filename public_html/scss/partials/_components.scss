@@ -1,3 +1,4 @@
+/*
 $btn-default: $dark-gray;
 $btn-default-color: $white;
 
@@ -7,6 +8,15 @@ $btn-success: $green;
 $btn-warning: $orange;
 $btn-info: $cyan;
 $btn-dark: $black;
+*/
+$btn-collection: (
+  "default": $dark-gray,
+  "danger": $red,
+  "success": $green,
+  "warning": $orange,
+  "info": $cyan,
+  "dark": lighten($black, 50%),
+);
 
 %btn {
   display: inline-block;
@@ -17,6 +27,19 @@ $btn-dark: $black;
   cursor: pointer;
 } // invisible class
 
+@each $key, $value in $btn-collection {
+  .btn-#{$key} {
+    @extend %btn;
+    background-color: $value;
+    color: colorYig($value);
+
+    &:hover {
+      background-color: darken($value, 10%);
+    }
+  }
+}
+
+/*
 .btn-default {
   @extend %btn;
   background-color: rgba($btn-default, 0.9);
@@ -76,3 +99,4 @@ $btn-dark: $black;
     background-color: lighten($color: $btn-dark, $amount: 20%);
   }
 }
+*/
